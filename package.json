@@ -1,18 +1,18 @@
 {
-  "name": "angulartics",
+  "name": "angulartics-for-mixpanel",
   "description": "Vendor-agnostic web analytics for AngularJS applications",
   "version": "0.18.0",
   "filename": "./src/angulartics.min.js",
   "main": "./src/angulartics.js",
-  "homepage": "http://luisfarzati.github.io/angulartics",
+  "homepage": "https://github.com/NeoCareSolutions/angulartics-for-mixpanel",
   "author": {
-    "name": "Luis Farzati",
-    "email": "lfarzati@gmail.com",
-    "url": "http://github.com/luisfarzati"
+    "name": "NeoCareSolutions",
+    "email": "",
+    "url": "https://github.com/NeoCareSolutions"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/luisfarzati/angulartics.git"
+    "url": "git@github.com:NeoCareSolutions/angulartics-for-mixpanel.git"
   },
   "keywords": [
     "angular",
