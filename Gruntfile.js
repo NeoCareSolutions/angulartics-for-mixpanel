@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             tagName: 'v%VERSION%',
             tagMessage: 'Version %VERSION%',
             push: true,
-            pushTo: 'upstream',
+            pushTo: 'origin',
             gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
          }
       },
@@ -43,8 +43,6 @@ module.exports = function(grunt) {
             stripBanners: false
          },
          dist: {
-            src: ['dist/angulartics-scroll.min.js', 'components/jquery-waypoints/waypoints.min.js'],
-            dest: 'dist/angulartics-scroll.min.js'
          }
       },
 
@@ -55,14 +53,13 @@ module.exports = function(grunt) {
          },
          predist: {
             files: {
-               'dist/angulartics-scroll.min.js': ['src/angulartics-scroll.js']
             }
          },
          dist: {
             files: [{
                expand: true,
                cwd: 'src/',
-               src: ['*.js', '!angulartics-scroll.js'],
+               src: ['*.js'],
                dest: 'dist/',
                ext: '.min.js'
             }]
@@ -81,7 +78,7 @@ module.exports = function(grunt) {
      if (!target) {
        target = 'patch';
      }
-     return grunt.task.run('bump-only:' + target, 'default', 'bump-commit', 'shell:publish');
+     return grunt.task.run('bump-only:' + target, 'default', 'bump-commit');
    });
 
 };
