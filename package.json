@@ -1,7 +1,7 @@
 {
   "name": "angulartics-for-mixpanel",
   "description": "Vendor-agnostic web analytics for AngularJS applications",
-  "version": "0.9.99",
+  "version": "1.0.0",
   "filename": "./src/angulartics.min.js",
   "main": "./src/angulartics.js",
   "homepage": "https://github.com/NeoCareSolutions/angulartics-for-mixpanel",
